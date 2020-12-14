@@ -83,6 +83,8 @@ set ruler
 set cmdheight=1
 
 " A buffer becomes hidden when it is abandoned
+" > http://www.mikewootc.com/wiki/tool/sw_develop/vim.html
+" > 这样在切换 buffer (文件 /tab) 的时候，之前编辑的文件就只是切换到后台，而不是关掉，所以再切换回来，undo 历史仍然在，可以 undo.
 set hid
 
 " Configure backspace so it acts as it should act
