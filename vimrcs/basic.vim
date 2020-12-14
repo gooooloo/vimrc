@@ -84,6 +84,7 @@ set incsearch
 set lazyredraw 
 
 " For regular expressions turn magic on
+" TODO: Do I need it?
 set magic
 
 " Show matching brackets when text indicator is over them
