@@ -73,9 +73,6 @@ set cmdheight=1
 " > 这样在切换 buffer (文件 /tab) 的时候，之前编辑的文件就只是切换到后台，而不是关掉，所以再切换回来，undo 历史仍然在，可以 undo.
 set hid
 
-" When searching try to be smart about cases 
-set smartcase
-
 " Highlight search results
 set hlsearch
 
