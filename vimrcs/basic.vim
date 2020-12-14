@@ -94,6 +94,7 @@ set showmatch
 set mat=1
 
 " No annoying sound on errors
+" TODO: t_vb 和 tm=xxx 是什么意思？
 set noerrorbells
 set novisualbell
 set t_vb=
