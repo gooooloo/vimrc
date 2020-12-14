@@ -117,6 +117,7 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
+" TODO: pick a colorscheme. maybe https://awesomeopensource.com/project/rakr/vim-one?
 try
     colorscheme desert
 catch
