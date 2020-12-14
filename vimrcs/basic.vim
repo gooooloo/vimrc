@@ -88,9 +88,10 @@ set lazyredraw
 set magic
 
 " Show matching brackets when text indicator is over them
+" 这个有意思：输入时，如果输入时右边的大中小括号}])，则光标会快速的跳去左侧对应的 {[(再跳回来。跳过去待的时间由下面的 matchtime 决定（1 代表 100ms）
 set showmatch 
 " How many tenths of a second to blink when matching brackets
-set mat=2
+set mat=1
 
 " No annoying sound on errors
 set noerrorbells
