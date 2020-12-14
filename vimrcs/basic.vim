@@ -80,6 +80,7 @@ set hlsearch
 set incsearch 
 
 " Don't redraw while executing macros (good performance config)
+" 注：macro 是指在录制操作 / 应用被录制操作时候的那个 macro。所以就是重放的时候，界面倾向于重放完再更新。
 set lazyredraw 
 
 " For regular expressions turn magic on
