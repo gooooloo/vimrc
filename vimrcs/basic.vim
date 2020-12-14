@@ -145,9 +145,9 @@ set ffs=unix,dos,mac
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn backup off, since most stuff is in SVN, git etc. anyway...
-set nobackup
-set nowb
-set noswapfile
+set nobackup      " 不要 ～ 备份
+set nowb          " 不要写时容灾 ～ 备份
+set noswapfile    " 不要写时容灾 swp 备份
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
