@@ -37,10 +37,6 @@ set history=500
 filetype plugin on
 filetype indent on
 
-" Set to auto read when a file is changed from the outside
-" set autoread
-" au FocusGained,BufEnter * checktime
-
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -48,22 +44,12 @@ let mapleader = ","
 " Fast saving
 nmap <leader>ss :w<cr>
 
-" :W sudo saves the file 
-" (useful for handling the permission-denied error)
-" command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=4
-
-" Avoid garbled characters in Chinese language windows OS
-" let $LANG='en'
-" set langmenu=en
-" source $VIMRUNTIME/delmenu.vim
-" source $VIMRUNTIME/menu.vim
 
 " Turn on the Wild menu
 set wildmenu
@@ -86,10 +72,6 @@ set cmdheight=1
 " > http://www.mikewootc.com/wiki/tool/sw_develop/vim.html
 " > 这样在切换 buffer (文件 /tab) 的时候，之前编辑的文件就只是切换到后台，而不是关掉，所以再切换回来，undo 历史仍然在，可以 undo.
 set hid
-
-" Configure backspace so it acts as it should act
-" set backspace=eol,start,indent
-" set whichwrap+=<,>,h,l
 
 " Ignore case when searching
 set ignorecase
