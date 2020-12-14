@@ -60,10 +60,10 @@ nmap <leader>ss :w<cr>
 set so=4
 
 " Avoid garbled characters in Chinese language windows OS
-let $LANG='en' 
-set langmenu=en
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
+" let $LANG='en'
+" set langmenu=en
+" source $VIMRUNTIME/delmenu.vim
+" source $VIMRUNTIME/menu.vim
 
 " Turn on the Wild menu
 set wildmenu
