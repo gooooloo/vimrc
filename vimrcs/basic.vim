@@ -166,7 +166,7 @@ set tabstop=4
 " 在 expandtab 没有打开的情况下，会按照 tabstop 的设置，先用若干个 TAB 来实现；剩下不够的再用空格来凑
 set smarttab
 
-" 1 tab == 4 spaces
+" 一个缩进宽 4 个空格
 set shiftwidth=4
 
 " Linebreak on 500 characters
