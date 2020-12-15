@@ -154,6 +154,7 @@ set noswapfile    " 不要写时容灾 swp 备份
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
+" 注：这个只在输入模式下生效。无论是否行首都能把输入的 TAB 替换成空格
 set expandtab
 
 " Be smart when using tabs ;)
