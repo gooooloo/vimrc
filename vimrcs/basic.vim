@@ -157,6 +157,9 @@ set noswapfile    " 不要写时容灾 swp 备份
 " 注：这个只在输入模式下生效。无论是否行首都能把输入的 TAB 替换成空格
 set expandtab
 
+" 一个 TAB 宽 4 个空格
+set tabstop=4
+
 " Be smart when using tabs ;)
 " 输入模式下，在行首输入 TAB 时，语义上不按输入 TAB 来处理，而按输入一层缩进来处理，所以会处理成 shiftwidth 个空格的宽度
 " 在 expandtab 打开的情况下，这些宽度用空格来实现；
@@ -165,7 +168,6 @@ set smarttab
 
 " 1 tab == 4 spaces
 set shiftwidth=4
-set tabstop=4
 
 " Linebreak on 500 characters
 set lbr
