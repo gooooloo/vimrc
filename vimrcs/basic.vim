@@ -170,8 +170,11 @@ set smarttab
 set shiftwidth=4
 
 " Linebreak on 500 characters
+" 换行时不在单词中间换
 set lbr
-set tw=500
+" 每行的长度
+" TODO: 似乎并没有太起作用？网上有说可能是因为被覆盖掉了 https://stackoverflow.com/a/5136998/3273620
+set tw=78
 
 set ai "Auto indent
 set si "Smart indent
