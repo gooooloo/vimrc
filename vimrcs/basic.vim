@@ -181,7 +181,9 @@ set ai "Auto indent
 " TODO: 据说这个是在auto indent打开时，而且在写C代码时，遇到{的下一行，会自动再缩进一点点之类的。
 " TODO: 但是我试的时候不生效。不知道为什么？先注释掉了。
 " set si "Smart indent
-set wrap "Wrap lines
+
+" Wrap lines
+set wrap
 
 
 """"""""""""""""""""""""""""""
