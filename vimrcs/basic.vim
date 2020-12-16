@@ -225,9 +225,9 @@ map <leader>tp :tabprevious<cr>
 map <leader>to :tabonly<cr>  " 关闭其他 tab
 map <leader>tc :tabclose<cr> " 关闭本 tab
 
-" Let 'tl' toggle between this and the last accessed tab
+" Let 'tt' toggle between this and the last accessed tab
 let g:lasttab = 1
-nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+nmap <Leader>tt :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
 
