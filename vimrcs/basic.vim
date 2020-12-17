@@ -299,9 +299,6 @@ map <leader>s? z=
 " TODO: 不确定是否会用，现保留注释
 " noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-" Quickly open a buffer for scribble
-map <leader>q :e ~/buffer<cr>
-
 " Quickly open a markdown buffer for scribble
 map <leader>x :e ~/buffer.md<cr>
 
