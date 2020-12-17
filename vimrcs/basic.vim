@@ -42,7 +42,7 @@ filetype indent on
 let mapleader = ","
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <leader>ww :w<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
