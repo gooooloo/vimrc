@@ -30,14 +30,9 @@ set guioptions-=L
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Turn persistent undo on 
-"    means that you can undo even when you close a buffer/VIM
+" => Turn persistent undo off
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
-    set undofile
-catch
-endtry
+set noundofile
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
