@@ -241,6 +241,9 @@ cnoremap <C-K> <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
+" vimrc related
+cnoremap <leader>rc e ~/.vimrc<CR>
+
 " for plugin gooooloo/smartim
 nmap <silent> <leader>3 :let g:smartim_enter_as_chinese=1<CR>
 imap <silent> <leader>3 <esc><leader>3a
