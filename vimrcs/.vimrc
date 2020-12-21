@@ -183,6 +183,7 @@ Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'hotoo/pangu.vim'
 Plug 'yianwillis/vimcdoc'
 Plug 'gooooloo/smartim'
+Plug 'gooooloo/smartquote.vim'
 
 call plug#end()
 
@@ -255,6 +256,8 @@ cnoremap <leader>rc e ~/.vimrc<CR>
 nmap <silent> <leader>3 :let g:smartim_enter_as_chinese=1<CR>
 imap <silent> <leader>3 <esc><leader>3a
 
+" for plugin gooooloo/smartquote
+nmap <silent> <leader>sq :call SmartQuote()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General abbreviations
