@@ -224,8 +224,8 @@ map <leader>tc :tabclose<cr> " 关闭本 tab
 map <leader>to :tabonly<cr>  " 关闭其他 tab
 map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
-map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/ " Opens a new tab with the current buffer's path 
-                                                   " Super useful when editing files in the same directory
+" Opens a new tab with the current buffer's path(Super useful when editing files in the same directory):
+map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
 nmap <Leader>tt :exe "tabn ".g:lasttab<CR>         " Let 'tt' toggle between this and the last accessed tab
 
 " spell realted
@@ -240,8 +240,8 @@ map <leader>s? z=
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
-cno $q <C-\>eDeleteTillSlash()<cr> " $q is super useful when browsing on the command line
-                                   " it deletes everything until the last slash 
+" $q is super useful when browsing on the command line; it deletes everything until the last slash:
+cno $q <C-\>eDeleteTillSlash()<cr>
 
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
