@@ -201,10 +201,12 @@ autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing(
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugin junegunn/limelight.vim
+" => Plugin junegunn/goyo.vim && junegunn/limelight.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+let g:goyo_width = '120'
 
 "" Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
