@@ -184,6 +184,8 @@ Plug 'hotoo/pangu.vim'
 Plug 'yianwillis/vimcdoc'
 Plug 'gooooloo/smartim'
 Plug 'gooooloo/smartquote.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
