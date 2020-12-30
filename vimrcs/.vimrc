@@ -186,6 +186,8 @@ Plug 'gooooloo/smartim'
 Plug 'gooooloo/smartquote.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -196,6 +198,20 @@ call plug#end()
 " => Plugin hotoo/pangu.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing()
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin junegunn/limelight.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+"" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+
+"" do not overrule hlsearch
+let g:limelight_priority = -1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -262,6 +278,10 @@ imap <silent> <leader>3 <esc><leader>3a
 
 " for plugin gooooloo/smartquote
 nmap <silent> <leader>sq :call SmartQuote()<CR>
+
+" for Plugin junegunn/goyo.vim
+nmap <silent> <leader>zz :Goyo<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General abbreviations
