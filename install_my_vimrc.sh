@@ -1,5 +1,5 @@
 #!/bin/sh
 set -e
 
-cat ./vimrcs/.vimrc > ~/.vimrc
+cat ./vimrc > ~/.vimrc
 echo "Installed the Vim configuration successfully! Enjoy :-)"
