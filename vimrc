@@ -190,6 +190,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -239,6 +240,12 @@ let g:limelight_conceal_ctermfg = 240
 "" do not overrule hlsearch
 let g:limelight_priority = -1
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin airblade/vim-gitgutter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:gitgutter_map_keys = 0
+let g:gitgutter_grep = 'rg --color never'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mapping
@@ -309,6 +316,12 @@ nmap <silent> <leader>sq :call SmartQuote()<CR>
 
 " for Plugin junegunn/goyo.vim
 nmap <silent> <leader>zz :Goyo<CR>
+
+" for Plugin airblade/vim-gitgutter
+nmap <silent> <leader>gt :GitGutterToggle<CR>
+nmap <silent> <leader>gn <Plug>(GitGutterNextHunk)
+nmap <silent> <leader>gp <Plug>(GitGutterPrevHunk)
+nmap <silent> <leader>ga <Plug>(GitGutterStageHunk)
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
