@@ -23,7 +23,7 @@ set hlsearch
 set incsearch 
 set noignorecase
 
-set so=4 " jk时上下边缘剩几行就开始滚动？
+set scrolloff=4 " jk时上下边缘剩几行就开始滚动？
 set number
 
 set noundofile
@@ -203,8 +203,32 @@ autocmd BufWritePre *.markdown,*.md,*.text,*.txt,*.wiki,*.cnx call PanGuSpacing(
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin junegunn/goyo.vim && junegunn/limelight.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
+function! s:goyo_enter()
+  if executable('tmux') && strlen($TMUX)
+    silent !tmux set status off
+    silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
+  endif
+  set noshowmode
+  set noshowcmd
+  set scrolloff=999
+  Limelight
+  " ...
+endfunction
+
+function! s:goyo_leave()
+  if executable('tmux') && strlen($TMUX)
+    silent !tmux set status on
+    silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
+  endif
+  set showmode
+  set showcmd
+  set scrolloff=4
+  Limelight!
+  " ...
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 let g:goyo_width = '120'
 
