@@ -251,6 +251,7 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 map 0 ^
 "map <space> /
 nmap <leader>ww :w<cr>
+nmap <leader>qq :q<cr>
 " noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm " Remove the Windows ^M
 
 " window related
