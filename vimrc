@@ -278,6 +278,7 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT " 删除当前 buffer
 map <leader>ba :bufdo bd<cr>              " 删除所有 buffer
 map <leader>bn :bnext<cr>
 map <leader>bp :bprevious<cr>
+map <leader>bb :b#<cr>
 
 " tab related
 map <leader>tc :tabclose<cr> " 关闭本 tab
