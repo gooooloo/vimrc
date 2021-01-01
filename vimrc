@@ -287,7 +287,8 @@ map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
 " Opens a new tab with the current buffer's path(Super useful when editing files in the same directory):
 map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
-nmap <Leader>tt :exe "tabn ".g:lasttab<CR>         " Let 'tt' toggle between this and the last accessed tab
+" Let 'tt' toggle between this and the last accessed tab
+nmap <Leader>tt :exe "tabn ".g:lasttab<CR>
 
 " spell realted
 map <leader>ss :setlocal spell!<cr>
