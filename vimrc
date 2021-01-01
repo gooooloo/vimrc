@@ -331,6 +331,9 @@ nmap <silent> <leader>gn <Plug>(GitGutterNextHunk)
 nmap <silent> <leader>gp <Plug>(GitGutterPrevHunk)
 nmap <silent> <leader>ga <Plug>(GitGutterStageHunk)
 
+" for Plugin airblade/vim-gitgutter
+nmap <silent> <leader>nt :NERDTreeToggle<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General abbreviations
