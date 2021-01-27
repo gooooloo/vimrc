@@ -157,6 +157,12 @@ set laststatus=2 " Always show the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c " Format the status line
 
 
+""""""""""""""""""""""""""""""
+" => Tags
+""""""""""""""""""""""""""""""
+" https://www.zhihu.com/question/47691414/answer/373700711
+set tags=./.tags;,.tags
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
