@@ -353,6 +353,10 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>0 <Plug>AirlineSelectTab0
 
+" for Plugin 'junegunn/fzf.vim'
+nmap <leader><leader>f :Files<CR>
+nmap <leader><leader>b :Buffers<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General abbreviations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
